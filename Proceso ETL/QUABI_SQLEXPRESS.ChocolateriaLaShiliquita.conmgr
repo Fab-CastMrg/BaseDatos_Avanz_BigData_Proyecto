@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="QUABI_SQLEXPRESS.ChocolateriaLaShiliquita"
+  DTS:DTSID="{5824657B-D1CD-4A94-802B-6DCB45DE4334}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=QUABI\SQLEXPRESS;Initial Catalog=ChocolateriaLaShiliquita;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-ProcesoETL_DWLaShiliquita-{5824657B-D1CD-4A94-802B-6DCB45DE4334}QUABI\SQLEXPRESS.ChocolateriaLaShiliquita;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
