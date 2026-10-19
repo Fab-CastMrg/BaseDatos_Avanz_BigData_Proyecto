@@ -1,3 +1,5 @@
+Use ChocolateriaLaShiliquita;
+GO
 -- Abril 2026
 -- Bloque 1
 INSERT INTO ventas (id_cliente, id_usuario, id_punto, fecha_venta, subtotal, descuento, total, observacion)

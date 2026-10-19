@@ -1,3 +1,5 @@
+Use ChocolateriaLaShiliquita;
+GO
 -- Abril 2026
 INSERT INTO pedidos (id_cliente, id_punto, id_usuario, id_estado, fecha_pedido, numero_cotizacion, subtotal, descuento_monto, total, observaciones)
 VALUES
