@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="QUABI_SQLEXPRESS.Modelo_Fisico_DataWarehouse"
+  DTS:DTSID="{A3AD3990-CD46-437D-B809-9AF32943C77E}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=QUABI\SQLEXPRESS;Initial Catalog=Modelo_Fisico_DataWarehouse;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-ProcesoETL_DWLaShiliquita-{A3AD3990-CD46-437D-B809-9AF32943C77E}QUABI\SQLEXPRESS.Modelo_Fisico_DataWarehouse;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
