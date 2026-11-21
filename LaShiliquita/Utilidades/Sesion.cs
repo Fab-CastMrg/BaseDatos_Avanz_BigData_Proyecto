@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using LaShiliquita.Entidades;
-
+ 
 namespace LaShiliquita.Utilidades
 {
     // Guarda el usuario y la sede de la sesion actual, y decide a que modulos tiene acceso cada rol
