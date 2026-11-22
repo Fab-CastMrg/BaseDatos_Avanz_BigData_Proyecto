@@ -1,22 +1,56 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
+using LaShiliquita.Negocio;
+using LaShiliquita.Presentacion;
 
 namespace LaShiliquita
 {
-    internal static class Program
+    static class Program
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Convierte a hash las contrasenas que sigan en texto plano.
+            // Solo actua la primera vez; despues no encuentra nada que convertir.
+            try
+            {
+                UsuarioNegocio usuarioNegocio = new UsuarioNegocio();
+                int migradas = usuarioNegocio.MigrarContrasenas();
+
+                if (migradas > 0)
+                {
+                    MessageBox.Show("Se protegieron " + migradas + " contraseñas con hash. " +
+                        "Los usuarios siguen entrando con las mismas contraseñas de antes.",
+                        "Seguridad", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("No se pudo conectar con la base de datos:\r\n" + ex.Message,
+                    "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Login -> ventana principal; si el usuario cierra sesion, vuelve al login
+            bool volverAlLogin = true;
+
+            while (volverAlLogin)
+            {
+                FrmLogin login = new FrmLogin();
+
+                if (login.ShowDialog() != DialogResult.OK)
+                {
+                    break;   // cerro el login sin ingresar
+                }
+
+                FrmPrincipal principal = new FrmPrincipal();
+                Application.Run(principal);
+                volverAlLogin = principal.CerroSesion;
+            }
         }
     }
 }

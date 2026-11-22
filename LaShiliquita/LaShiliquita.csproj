@@ -50,6 +50,9 @@
     <Compile Include="Datos\Conexion.cs" />
     <Compile Include="Datos\UsuarioDatos.cs" />
     <Compile Include="Entidades\Sede.cs" />
+    <Compile Include="Presentacion\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\FrnLogin.cs">
       <SubType>Form</SubType>
     </Compile>
