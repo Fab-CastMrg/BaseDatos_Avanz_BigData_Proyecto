@@ -1,0 +1,228 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f3ecb6a-2b37-407a-817b-8d3ac55c55a3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Chocolateria La Shiliquita DW</ID>
+  <Name>Chocolateria La Shiliquita DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="48c39771-93b3-4e51-9cad-fe0debc5f165">
+      <ID>Dim Medio Pago</ID>
+      <Name>Dim Medio Pago</Name>
+      <DimensionID>Dim Medio Pago</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e4a7389b-7b25-4525-9802-3128b8e79dfe">
+          <AttributeID>Id Medio Pago</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="390eb52a-3f2c-44d6-8463-064c4fb489e9">
+      <ID>Dim Cliente Pago</ID>
+      <Name>Dim Cliente Pago</Name>
+      <DimensionID>Dim Cliente Pago</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e18c03d8-6155-4f6d-b646-a6dbd52a5a08">
+          <AttributeID>Id Cliente</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3bb6707a-be6a-494f-ba04-038822c05ab5">
+      <ID>Dim Tipo Venta</ID>
+      <Name>Dim Tipo Venta</Name>
+      <DimensionID>Dim Tipo Venta</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="81d9e8f8-5c13-4d29-875c-86c673d29447">
+          <AttributeID>Id Tipo Venta</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6be5ab68-40a2-4ff7-8690-0b6e6cc55ae3">
+      <ID>Dim Tiempo Pago</ID>
+      <Name>Dim Tiempo Pago</Name>
+      <DimensionID>Dim Tiempo Pago</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="77f08b20-4a85-4f3a-8f25-6f788e9a5e2d">
+          <AttributeID>Id Tiempo</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="c474a737-5e24-45d9-adeb-9a0eaa4705d7">
+      <ID>Hecho Pago Clientes</ID>
+      <Name>Hecho Pago Clientes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ca08b61e-f3ca-489e-9cf6-2929f9942dbc">
+          <ID>Id Pago Cliente</ID>
+          <Name>Id Pago Cliente</Name>
+          <Source dwd:design-time-name="9040225a-e856-4f1f-ba56-b20432c5d25c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b307bdf6-6082-4490-8246-eab08c456a12">
+              <TableID>dbo_Hecho_Pago_Clientes</TableID>
+              <ColumnID>Id_Pago_Cliente</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bf48ac21-5711-45bd-9b83-3f8cb077af12">
+          <ID>Monto</ID>
+          <Name>Monto</Name>
+          <Source dwd:design-time-name="fc2a971c-f015-450a-8277-93d024a49f00">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eb5c0994-5ad7-452d-8ac5-b24c7091d4b4">
+              <TableID>dbo_Hecho_Pago_Clientes</TableID>
+              <ColumnID>Monto</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="475b1d40-9719-4d69-b37a-a120760d3d8c">
+          <ID>Dias Hasta Pago</ID>
+          <Name>Dias Hasta Pago</Name>
+          <Source dwd:design-time-name="a19e4366-478a-4313-8b3d-ad8947a0c18c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="07a14e33-d8b2-4146-a3ab-2275a7a6b174">
+              <TableID>dbo_Hecho_Pago_Clientes</TableID>
+              <ColumnID>Dias_Hasta_Pago</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6a3ba5e2-66a9-47da-baad-7668c8084e1d">
+          <ID>Recuento Hecho Pago Clientes</ID>
+          <Name>Recuento Hecho Pago Clientes</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f015647f-13c0-4e28-a08f-fd82456efc04">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="4a731b37-1aca-45bb-8813-d3b6b30c8613">
+              <TableID>dbo_Hecho_Pago_Clientes</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b90623e6-04fd-45fd-8376-7e8e7bfcd701">
+          <CubeDimensionID>Dim Medio Pago</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ab0d351d-439d-4011-b69c-bbd97c48831d">
+              <AttributeID>Id Medio Pago</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e06a83be-382c-4c50-85be-cccd9012076d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1249074c-eadd-45c4-ac06-cd2299325a1f">
+                    <TableID>dbo_Hecho_Pago_Clientes</TableID>
+                    <ColumnID>Id_Medio_Pago</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dc5e5c7e-cd90-4fc2-ae46-88c0bb35b1e3">
+          <CubeDimensionID>Dim Cliente Pago</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="12a1ecb9-975d-4573-83d1-d99c4c62481f">
+              <AttributeID>Id Cliente</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="adcd1506-a80a-44c9-a454-a3d25064a91d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c5c9ac7f-5a98-417c-a6d9-dae1a3056513">
+                    <TableID>dbo_Hecho_Pago_Clientes</TableID>
+                    <ColumnID>Id_Cliente</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="55cb5e4c-8bc1-4086-ab1e-182af3301efa">
+          <CubeDimensionID>Dim Tipo Venta</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a85468fc-fdb6-4ed5-a65c-71cb28746487">
+              <AttributeID>Id Tipo Venta</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0710fcdc-e712-4aea-94fc-078164a493a9">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d8069f8d-a712-4cca-b1c4-a27acfacd988">
+                    <TableID>dbo_Hecho_Pago_Clientes</TableID>
+                    <ColumnID>Id_Tipo_Venta</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="872e1abd-4d1a-456f-a8de-bf0a35ef594e">
+          <CubeDimensionID>Dim Tiempo Pago</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c779ed8d-332a-4b6d-abf7-fde0afef3a78">
+              <AttributeID>Id Tiempo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="602a6eca-4b57-4d1e-b5f6-26e875f318e0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ca47c214-8954-4447-98c0-1d21a358c02d">
+                    <TableID>dbo_Hecho_Pago_Clientes</TableID>
+                    <ColumnID>Id_Tiempo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="2d87169a-51f3-4774-8356-5c7af9dce48d">
+    <DataSourceViewID>Chocolateria La Shiliquita DW</DataSourceViewID>
+  </Source>
+</Cube>

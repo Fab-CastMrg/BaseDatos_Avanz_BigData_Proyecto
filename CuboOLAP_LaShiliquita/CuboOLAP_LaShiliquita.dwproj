@@ -6,6 +6,36 @@
     <Name>CuboOLAP_LaShiliquita.database</Name>
     <FullPath>CuboOLAP_LaShiliquita.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Chocolateria La Shiliquita DW.cube</Name>
+      <FullPath>Chocolateria La Shiliquita DW.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Chocolateria La Shiliquita DW.partitions</Name>
+          <FullPath>Chocolateria La Shiliquita DW.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Medio Pago.dim</Name>
+      <FullPath>Dim Medio Pago.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Cliente Pago.dim</Name>
+      <FullPath>Dim Cliente Pago.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tipo Venta.dim</Name>
+      <FullPath>Dim Tipo Venta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tiempo Pago.dim</Name>
+      <FullPath>Dim Tiempo Pago.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>Chocolateria La Shiliquita DW.ds</Name>
