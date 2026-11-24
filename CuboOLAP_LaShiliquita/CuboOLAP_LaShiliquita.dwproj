@@ -6,10 +6,37 @@
     <Name>CuboOLAP_LaShiliquita.database</Name>
     <FullPath>CuboOLAP_LaShiliquita.database</FullPath>
   </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>Chocolateria La Shiliquita DW.ds</Name>
+      <FullPath>Chocolateria La Shiliquita DW.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Chocolateria La Shiliquita DW.dsv</Name>
+      <FullPath>Chocolateria La Shiliquita DW.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Chocolateria La Shiliquita DW</Id>
+            <Name>Chocolateria La Shiliquita DW</Name>
+            <Value xsi:type="xsd:string">Provider=MSOLEDBSQL19.1;Data Source=QUABI\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=ChocolateriaLaShiliquita_DW;Trust Server Certificate=True</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Chocolateria La Shiliquita DW</Id>
+            <Name>Chocolateria La Shiliquita DW</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
