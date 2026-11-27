@@ -13,6 +13,8 @@ namespace LaShiliquita.Entidades
         public string NombreRol { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
+        public string Dni { get; set; }
+        public string Telefono { get; set; }
         public string NombreUsuario { get; set; }
         public string Contrasena { get; set; }   // texto guardado en la BD (hash); se limpia al iniciar sesion
         public bool Activo { get; set; }
@@ -20,6 +22,11 @@ namespace LaShiliquita.Entidades
         public string NombreCompleto
         {
             get { return (Nombres + " " + Apellidos).Trim(); }
+        }
+
+        public string EstadoTexto
+        {
+            get { return Activo ? "Activo" : "Desactivado"; }
         }
     }
 }
