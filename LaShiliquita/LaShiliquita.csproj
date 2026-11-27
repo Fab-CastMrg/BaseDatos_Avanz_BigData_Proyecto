@@ -74,6 +74,9 @@
     <Compile Include="Presentacion\FrnLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\UcInventario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Presentacion\UcUsuario.cs">
       <SubType>UserControl</SubType>
     </Compile>
