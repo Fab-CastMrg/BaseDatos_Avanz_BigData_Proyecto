@@ -60,6 +60,9 @@
     <Compile Include="Presentacion\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\FrmTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\FrnLogin.cs">
       <SubType>Form</SubType>
     </Compile>
