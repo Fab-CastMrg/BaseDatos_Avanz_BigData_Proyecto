@@ -55,6 +55,7 @@
     <Compile Include="Entidades\LoteStock.cs" />
     <Compile Include="Entidades\MateriaPrima.cs" />
     <Compile Include="Entidades\MovimientoInventario.cs" />
+    <Compile Include="Entidades\MovimientoMateriaPrima.cs" />
     <Compile Include="Entidades\PagoVenta.cs" />
     <Compile Include="Entidades\ProductoVenta.cs" />
     <Compile Include="Entidades\ResumenInventario.cs" />
