@@ -1,14 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System;
-using System.Drawing;
-using System.Windows.Forms;
-using LaShiliquita.Utilidades;
-
-using System;
 using System.Drawing;
 using System.Windows.Forms;
 using LaShiliquita.Utilidades;
@@ -187,6 +177,14 @@ namespace LaShiliquita.Presentacion
             pnlContenido.Controls.Clear();
 
             // Modulos ya desarrollados
+            if (modulo == "Ventas")
+            {
+                UcVentas ventas = new UcVentas();
+                ventas.Dock = DockStyle.Fill;
+                pnlContenido.Controls.Add(ventas);
+                return;
+            }
+
             if (modulo == "Usuarios")
             {
                 UcUsuarios usuarios = new UcUsuarios();
@@ -206,9 +204,6 @@ namespace LaShiliquita.Presentacion
             {
                 case "Dashboard":
                     aviso.Text = "Bienvenido, " + Sesion.UsuarioActual.Nombres + ". El resumen del día se agrega en la Etapa 7.";
-                    break;
-                case "Ventas":
-                    aviso.Text = "Este módulo se desarrolla en la Etapa 3.";
                     break;
                 case "Inventario":
                     aviso.Text = "Este módulo se desarrolla en la Etapa 4.";
