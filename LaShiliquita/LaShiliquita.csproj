@@ -66,6 +66,9 @@
     <Compile Include="Presentacion\UcUsuario.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Presentacion\UcVentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Utilidades\Estilo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
