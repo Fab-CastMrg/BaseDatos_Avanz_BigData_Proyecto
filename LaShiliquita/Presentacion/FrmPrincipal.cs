@@ -185,6 +185,14 @@ namespace LaShiliquita.Presentacion
                 return;
             }
 
+            if (modulo == "Inventario")
+            {
+                UcInventario inventario = new UcInventario();
+                inventario.Dock = DockStyle.Fill;
+                pnlContenido.Controls.Add(inventario);
+                return;
+            }
+
             if (modulo == "Usuarios")
             {
                 UcUsuarios usuarios = new UcUsuarios();
@@ -204,9 +212,6 @@ namespace LaShiliquita.Presentacion
             {
                 case "Dashboard":
                     aviso.Text = "Bienvenido, " + Sesion.UsuarioActual.Nombres + ". El resumen del día se agrega en la Etapa 7.";
-                    break;
-                case "Inventario":
-                    aviso.Text = "Este módulo se desarrolla en la Etapa 4.";
                     break;
                 case "MateriaPrima":
                 case "Proveedores":
