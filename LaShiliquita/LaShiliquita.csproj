@@ -54,6 +54,7 @@
     <Compile Include="Entidades\ProductoVenta.cs" />
     <Compile Include="Entidades\Rol.cs" />
     <Compile Include="Entidades\Sede.cs" />
+    <Compile Include="Entidades\Venta.cs" />
     <Compile Include="Presentacion\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
