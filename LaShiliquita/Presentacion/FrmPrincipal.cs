@@ -8,6 +8,11 @@ using System.Drawing;
 using System.Windows.Forms;
 using LaShiliquita.Utilidades;
 
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using LaShiliquita.Utilidades;
+
 namespace LaShiliquita.Presentacion
 {
     // Ventana principal: menu lateral segun el rol, encabezado con el usuario y zona de contenido.
@@ -179,7 +184,18 @@ namespace LaShiliquita.Presentacion
             string modulo = boton.Tag.ToString();
             lblTitulo.Text = boton.Text;
 
-            // Por ahora cada modulo muestra un aviso; en cada etapa se reemplaza por su pantalla real
+            pnlContenido.Controls.Clear();
+
+            // Modulos ya desarrollados
+            if (modulo == "Usuarios")
+            {
+                UcUsuarios usuarios = new UcUsuarios();
+                usuarios.Dock = DockStyle.Fill;
+                pnlContenido.Controls.Add(usuarios);
+                return;
+            }
+
+            // El resto muestra un aviso hasta que se desarrolle su etapa
             Label aviso = new Label();
             aviso.Dock = DockStyle.Top;
             aviso.Height = 60;
@@ -207,12 +223,8 @@ namespace LaShiliquita.Presentacion
                 case "Reportes":
                     aviso.Text = "Este módulo se desarrolla en la Etapa 7.";
                     break;
-                case "Usuarios":
-                    aviso.Text = "La administración de usuarios es el siguiente paso de la Etapa 2.";
-                    break;
             }
 
-            pnlContenido.Controls.Clear();
             pnlContenido.Controls.Add(aviso);
         }
 
