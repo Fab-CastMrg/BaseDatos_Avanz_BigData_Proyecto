@@ -72,6 +72,9 @@
     <Compile Include="Presentacion\FrmMovimientoInventario.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\FrmMovimientoMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
