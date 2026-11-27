@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Datos\Conexion.cs" />
     <Compile Include="Datos\InventarioDatos.cs" />
+    <Compile Include="Datos\MateriaPrimaDatos.cs" />
     <Compile Include="Datos\UsuarioDatos.cs" />
     <Compile Include="Datos\VentaDatos.cs" />
     <Compile Include="Entidades\ItemCarrito.cs" />
