@@ -53,6 +53,7 @@
     <Compile Include="Datos\VentaDatos.cs" />
     <Compile Include="Entidades\ItemCarrito.cs" />
     <Compile Include="Entidades\LoteStock.cs" />
+    <Compile Include="Entidades\MateriaPrima.cs" />
     <Compile Include="Entidades\MovimientoInventario.cs" />
     <Compile Include="Entidades\PagoVenta.cs" />
     <Compile Include="Entidades\ProductoVenta.cs" />
