@@ -193,6 +193,14 @@ namespace LaShiliquita.Presentacion
                 return;
             }
 
+            if (modulo == "MateriaPrima")
+            {
+                UcMateriaPrima materiaPrima = new UcMateriaPrima();
+                materiaPrima.Dock = DockStyle.Fill;
+                pnlContenido.Controls.Add(materiaPrima);
+                return;
+            }
+
             if (modulo == "Usuarios")
             {
                 UcUsuarios usuarios = new UcUsuarios();
@@ -213,7 +221,6 @@ namespace LaShiliquita.Presentacion
                 case "Dashboard":
                     aviso.Text = "Bienvenido, " + Sesion.UsuarioActual.Nombres + ". El resumen del día se agrega en la Etapa 7.";
                     break;
-                case "MateriaPrima":
                 case "Proveedores":
                     aviso.Text = "Este módulo se desarrolla en la Etapa 5.";
                     break;
