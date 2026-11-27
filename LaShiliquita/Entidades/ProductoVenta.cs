@@ -1,4 +1,10 @@
-﻿namespace LaShiliquita.Entidades
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LaShiliquita.Entidades
 {
     // Producto del catalogo de ventas, con su stock en la sede de la sesion
     public class ProductoVenta
