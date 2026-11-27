@@ -66,6 +66,9 @@
     <Compile Include="Negocio\InventarioNegocio.cs" />
     <Compile Include="Negocio\MateriaPrimaNegocio.cs" />
     <Compile Include="Negocio\VentaNegocio.cs" />
+    <Compile Include="Presentacion\FrmMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\FrmMovimientoInventario.cs">
       <SubType>Form</SubType>
     </Compile>
